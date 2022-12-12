@@ -22,10 +22,4 @@ jobs:
         architecture: 'x64'
     - run: pip install -r ./requirements.txt && python ./main.py
 
-    env:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_SECRET: ${{ secrets.APP_SECRET }}
-      TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-      USER_ID: ${{ secrets.USER_ID }}
-      TIANXING_API: ${{ secrets.TIANXING_API }}
       
