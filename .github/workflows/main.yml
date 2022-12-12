@@ -1,1 +1,5 @@
-
+name: time
+on:
+  schedule:
+  - corn:  '0 23 * * *'  
+  workflow_dispatch:
