@@ -1,7 +1,7 @@
 {"app_id": "wx6735bcb6e4bc18d0",
   "app_secret": "c60d4431a77ae344e2481bb49c1853bd",
-  "template_id": "你的模板id",
-  "user": ["获取到的微信号1", "获取到的微信号2（可填可不填）"],
+  "template_id": "-MyG2uxyQCQ6GGwTmPuGm_qBcCRCJ71jEyeaLAqLm3g",
+  "user": ["oozgb60zLgqwLkAXorL6Bf0r6qwc"],
   "province": "河南",
   "city": "郑州",
   "birthday1": "r1999-10-28",
@@ -13,5 +13,5 @@
   "Whether_tip": true,
   "Whether_health": true,
   "Whether_lucky": false,
-  "tianxing_API": "天行API",
+  "tianxing_API": "c505a78e3c455d1307795577950fe6a0",
   "astro": ""}
