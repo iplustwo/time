@@ -19,9 +19,9 @@ def get_color():
 
 def get_access_token():
     # appId
-    app_id = config["app_id"]
+    app_id = os.environ["APP_ID"]
     # appSecret
-    app_secret = config["app_secret"]
+    app_secret = os.environ["APP_SECRET"]
     post_url = ("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}"
                 .format(app_id, app_secret))
     try:
@@ -225,7 +225,7 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
             birthdays[k] = v
     data = {
         "touser": to_user,
-        "template_id": config["template_id"],
+        "template_id": os.environ["TEMPLATE_ID"],
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "data": {
@@ -332,12 +332,12 @@ if __name__ == "__main__":
     # 获取accessToken
     accessToken = get_access_token()
     # 接收的用户
-    users = config["user"]
+    users = os.environ["USER_ID"]
     # 传入省份和市获取天气信息
     province, city = config["province"], config["city"]
     weather, max_temperature, min_temperature = get_weather(province, city)
     #获取天行API
-    tianxing_API=config["tianxing_API"]
+    tianxing_API=os.environ["TIANXING_API"]
     #是否开启天气预报API
     Whether_tip=config["Whether_tip"]
     #是否启用词霸每日一句
