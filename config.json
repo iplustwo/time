@@ -1,5 +1,5 @@
-{"app_id": "你的appid",
-  "app_secret": "你的appsecret",
+{"app_id": "wx6735bcb6e4bc18d0",
+  "app_secret": "c60d4431a77ae344e2481bb49c1853bd",
   "template_id": "你的模板id",
   "user": ["获取到的微信号1", "获取到的微信号2（可填可不填）"],
   "province": "河南",
